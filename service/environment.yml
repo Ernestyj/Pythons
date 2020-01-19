@@ -1,0 +1,23 @@
+dependencies:  # the packages that can be installed by conda (preferred over pip because of better compatibility)
+#- subprocess32=3.2.7
+
+- pip:  # the packages that can only be installed by pip
+  - teradata==15.10.0.21
+  - qutils==0.5.11
+  - pymysql==0.7.11
+  - pytest==3.2.2
+  - pypyodbc==1.3.2
+  - SQLAlchemy==1.1.6
+
+  # install this package in docker with gcc
+  #- MySQL-python==1.2.5
+  #- mysqlclient==1.3.7
+
+  - numpy==1.15.4
+  # specify pandas version will cause version mismatch of numpy and pandas
+  - pandas
+
+  - matplotlib==2.2.3
+  - seaborn==0.9.0
+
+  - jinja2==2.10
