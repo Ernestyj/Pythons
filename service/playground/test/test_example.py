@@ -19,7 +19,7 @@ class TestExample(unittest.TestCase):
     def tearDown(self):
         print("***** tearDown *****")
 
-    def _example(self):
+    def test_example(self):
         print("This is a test example.")
         print(TIMEZONE)
 
